@@ -7,8 +7,11 @@ title: Posts
 <p>On this site you can find information about me and my interests!</p>
 
 <hr></hr>
+
+<a href="test.html">Link</a>
+
+<hr></hr>
+
 {% for post in site.posts %}
 <p><a href="{{ post.url }}">{{ post.title }}</a><div class="dates">{{ post.date | date_to_string }} </div></p>
 {% endfor %}
-
-<a href="test.html">Link</a>
